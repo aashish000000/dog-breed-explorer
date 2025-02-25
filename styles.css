@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 28px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+input, button {
+    padding: 12px;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 6px;
+    border: none;
+}
+input {
+    width: 70%;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Image Gallery */
+#imageContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+.dark-mode input {
+    background: #444;
+    color: white;
+    border: 1px solid #666;
+}
+.dark-mode button {
+    background-color: #ff9800;
+}
+.dark-mode button:hover {
+    background-color: #e68900;
+}
+
+/* Spinner */
+.spinner {
+    display: none;
+    margin: 20px auto;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #007BFF;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
